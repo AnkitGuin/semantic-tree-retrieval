@@ -1,0 +1,32 @@
+# Generated outputs (regenerate with run.sh)
+tree.json
+query_results_tree.jsonl
+query_results_tree_train.jsonl
+query_results_flat.jsonl
+query_results_flat_train.jsonl
+
+# Competition dataset (large / provided separately)
+dataset/
+queries/
+helpers/
+schemas/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Models cache
+.cache/
+sentence_transformers_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
