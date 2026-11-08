@@ -92,7 +92,7 @@ def routing_accuracy(
 
 def evaluate(results_path: str, train_path: str = TRAIN_QUERIES) -> None:
     results = {r["query_id"]: r["results"] for r in load_jsonl(results_path)}
-    train   = {q["query_id"]: set(q.get("relevant_doc_ids", [])) for q in load_jsonl(train_path)}
+    train   = {q["query_id"]: set(q.get("ground_truth", [])) for q in load_jsonl(train_path)}
     subtree_leaves = load_tree_leaves()
 
     metrics = defaultdict(float)
